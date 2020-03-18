@@ -1,6 +1,6 @@
 {
     "name": "laramate/support",
-    "description": "Laramate Tool Package for Laravel",
+    "description": "Support Package for Laravel",
     "license": "MIT",
     "type": "package",
     "authors": [
@@ -13,7 +13,7 @@
         {
             "name": "Tobi Kivelip",
             "email": "tkivelip@gmail.com",
-            "homepage": "https://www.laramate.de/",
+            "homepage": "https://github.com/tkivelip",
             "role": "Developer"
         }
     ],
@@ -21,7 +21,8 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
-        "illuminate/support": "5.6.*|5.7.*|5.8.*|6.*|7.*"
+        "illuminate/support": "5.6.*|5.7.*|5.8.*|6.*|7.*",
+        "illuminate/database": "5.6.*|5.7.*|5.8.*|6.*|7.*"
     },
     "require-dev": {
         "mockery/mockery": "^1.0",
