@@ -3,3 +3,4 @@ vendor/
 composer.lock
 .php_cs.cache
 nbproject/
+.phpunit.result.cache
