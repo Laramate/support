@@ -1,4 +1,4 @@
-Laramate Tool Package for Laravel
+Laramate Support Package for Laravel
 ===================================================================================================
 
 * [Description](#description)
