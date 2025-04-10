@@ -15,6 +15,7 @@ This is the Laramate Support package with basic helpers and extensions for Larav
 - Makeable Trait
 - Auto Create Uuid Trait
 - CSV Importer
+- Simple Versioning
 
 ## License
 
