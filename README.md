@@ -16,6 +16,11 @@ This is the Laramate Support package with basic helpers and extensions for Larav
 - CSV Importer
 - Simple Versioning
 
+## About Laramate
+We build high-performance custom software and CRM systems that adapt to you. Leveraging 
+the power of Laravel, React, and Statamic, we create digital experiences tailored 
+specifically to your operational needs. Find out more on [www.laramate.de](https://www.laramate.de).
+
 ## License
 
 This package is open-sourced software licensed under the [MIT license](LICENSE.md).
