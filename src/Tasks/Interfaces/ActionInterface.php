@@ -2,7 +2,8 @@
 
 namespace Laramate\Support\Tasks\Interfaces;
 
-interface ActionInterface {
+interface ActionInterface
+{
     /**
      * Execute the job.
      */
