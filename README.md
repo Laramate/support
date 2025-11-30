@@ -9,7 +9,6 @@ This is the Laramate Support package with basic helpers and extensions for Larav
 
 ## Available Features
 
-- JsonResponseData and JsonResponseError
 - Translatable Enums
 - Actions
 - Makeable Trait
