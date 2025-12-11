@@ -29,16 +29,14 @@ class CsvImport
         }
 
         while (! $file->eof()) {
-            $line = $file->fgetcsv();
+            $line = $this->getLineAsArray($file);
 
             $line = collect($line)
                 ->mapWithKeys(function ($item, $index) {
                     $key = $this->keys ? $this->keys[$index] : $index;
-
                     $item = $item == 'NULL' ? null : $item;
 
                     return [$key => $item];
-
                 })
                 ->toArray();
 
@@ -52,6 +50,10 @@ class CsvImport
 
     protected function getLineAsArray(SplFileObject &$file): array
     {
-        return $file->fgetcsv($this->separator, $this->enclosure, $this->escape);
+        return $file->fgetcsv(
+            separator: $this->separator,
+            enclosure: $this->enclosure,
+            escape: $this->escape
+        );
     }
 }
