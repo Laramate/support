@@ -26,6 +26,11 @@ return Application::configure(basePath: dirname(__DIR__))
     ->create();
 ```
 
+## Technical Note
+This middleware manipulates the request before it reaches the controller or validation logic. 
+It does not modify the response content-type directly; instead, it signals to the rest of the 
+Laravel pipeline that the client "prefers" JSON, triggering the framework's internal JSON-first logic.
+
 ---
 ### About Laramate
 We build high-performance custom software and CRM systems that adapt to you. Leveraging
