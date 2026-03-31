@@ -1,28 +1,11 @@
 <p align="center" style="background: white; padding: 40px 20px 20px 20px"><a href="https://laramate.de" target="_blank"><img src="https://laramate.de/laramate.webp" width="200" alt="Laravel Logo"></a></p>
 
-# Laramate Support
+# Actions
 
-This is the Laramate Support package with basic helpers and extensions for Laravel.
-
-> Warning: This package is under constant development. Use at your own risk.
+Work in progress. Sorry :)
 
 
-## Available Features
 
-- [Actions](docs/actions.md)
-- Translatable Enums
-- Makeable Trait
-- Auto Create Uuid Trait
-- CSV Importer
-- Simple Versioning
-- [ForceJsonResponse Middleware](docs/force-json-response-middleware.md)
-
-## Installation
-You can install the package via composer.
-
-```bash
-composer require laramate/support
-```
 
 ---
 ### About Laramate
