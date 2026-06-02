@@ -15,6 +15,7 @@ This is the Laramate Support package with basic helpers and extensions for Larav
 - Auto Create Uuid Trait
 - CSV Importer
 - Simple Versioning
+- Data Mapper
 - [ForceJsonResponse Middleware](docs/force-json-response-middleware.md)
 
 ## Installation
