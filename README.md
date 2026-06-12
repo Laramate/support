@@ -2,28 +2,35 @@
 
 # Laramate Support
 
-This is the Laramate Support package with basic helpers and extensions for Laravel.
+A collection of helpers, traits, and extensions for Laravel that we use across our
+agency projects. It bundles common building blocks, from queueable actions to
+model versioning, into a single, lightweight package.
 
-> Warning: This package is under constant development. Use at your own risk.
+Supports **Laravel 12** and **Laravel 13**.
 
-
-## Available Features
-
-- [Actions](docs/actions.md)
-- Translatable Enums
-- Makeable Trait
-- Auto Create Uuid Trait
-- CSV Importer
-- Simple Versioning
-- Data Mapper
-- [ForceJsonResponse Middleware](docs/force-json-response-middleware.md)
+> **Warning:** This package is under constant development. Use at your own risk.
 
 ## Installation
-You can install the package via composer.
+
+Install the package via Composer:
 
 ```bash
 composer require laramate/support
 ```
+
+## Features
+
+| Feature | Description |
+| --- | --- |
+| [Actions](docs/actions.md) | Queueable, self-dispatching action classes for encapsulating business logic. Extend the base `Action`, implement `handle()`, and dispatch it synchronously or via the queue. |
+| [Translatable Enums](docs/translatable-enums.md) | An `Enum` trait with a `TranslatableEnum` interface that resolves enum values through Laravel's translation files and converts cases into select arrays for forms. |
+| [Makeable Trait](docs/makeable-trait.md) | Adds a static `make()` factory method to any class, allowing fluent instantiation without the `new` keyword. |
+| [Auto Create UUID Trait](docs/auto-create-uuid-trait.md) | Automatically generates a UUID for Eloquent models on creation. The column name is configurable and invalid or missing UUIDs are renewed transparently. |
+| [CSV Importer](docs/csv-importer.md) | Reads CSV files into arrays with configurable separator, enclosure, and escape characters. Optionally uses the first line as array keys and normalizes `NULL` values. |
+| [Simple Versioning](docs/simple-versioning.md) | A `Versioning` trait for Eloquent models that creates immutable model versions with version IDs, labels, and author tracking. |
+| [Data Mapper](docs/data-mapper.md) | An abstract mapper for converting raw input arrays into a defined attribute structure using mapping rules and default values. |
+| [Numbering Formatter](docs/numbering-formatter.md) | Formatters for converting positions into numbering schemes, e.g. natural numbers with optional zero-padding. |
+| [ForceJsonResponse Middleware](docs/force-json-response-middleware.md) | Forces the `Accept: application/json` header on incoming requests so APIs consistently return JSON instead of HTML redirects or views. |
 
 ---
 ### About Laramate
