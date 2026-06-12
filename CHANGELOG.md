@@ -1,6 +1,16 @@
 Changelog
 ===================================================================================================
 
+4.0 - 2026-06-12
+-------------------------------------------------------------------------------
+- Raised the minimum PHP version from 8.0 to 8.2
+- Extended and reworked the Data Mapper (map/default methods, Closures, casts)
+- Added documentation and tests for Actions
+- Added documentation and tests for the CsvImporter
+- Added documentation and tests for the AutoCreateUuid trait
+- Removed the CS Fixer config
+- Removed Laravel 11 Supports
+
 3.2 - 2025-11-30
 -------------------------------------------------------------------------------
 - Removed JSON responses (use Spatie Larval Data instead)
