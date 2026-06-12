@@ -9,7 +9,7 @@ class CsvImport
 {
     use Makeable;
 
-    protected ?array $keys;
+    protected ?array $keys = null;
 
     public function __construct(
         protected string $uri,
